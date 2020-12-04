@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;700&display=swap');
+
+:root {
+    --primary-color: #153e90;
+    --secondary-color: #54e346;
+    --lighter-primary-color: #0e49b5;
+    --ternary-color: #fffaa4;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* Text Styles */
+.secondary {
+    color: var(--secondary-color);
+}
+
+/* Global Typography */
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+
+/* Header */
+
+header {
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+
+.header-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-brand {
+    flex-grow: 1;
+}
+
+/* Header - Search Form */
+
+.search-form {
+    flex-grow: 1;
+    display: flex;
+}
+
+.search-form-input {
+    background: var(--lighter-primary-color);
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    height: 35px;
+    padding: 0px 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.search-form-input::placeholder {
+    color: white;
+    font-size: 14px;
+}
+
+.search-form-submit {
+    border: none;
+    background: var(--secondary-color);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0px 15px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.search-form-submit:hover {
+    background: #36b82a;
+}
+
+.header-navbar {
+    display: flex;
+    justify-content: space-between;
+    justify-self: flex-end;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+/* Header-Typography */
+
+.header-brand,
+.header-navbar-link {
+    color: white;
+    font-weight: bold;
+    margin: 15px 0px;
+}
+
+
+.header-brand {
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+}
+
+
+
+/* Subheader */
+
+.subheader {
+    background: var(--ternary-color);
+    display: flex;
+    align-items: center;
+}
+
+.subheader-navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Subheader-Typography */
+.subheader-navbar-link {
+    color: rgb(19, 19, 19);
+    font-weight: 500;
+    font-size: 14px;
+    margin: 15px 0px;
+}
+
+
+/* Sections */
+
+.section-header {
+    display: flex;
+    justify-content: center;
+    background: var(--primary-color);
+}
+
+.section-header-title {
+    color: white;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+
+/* Hero */
+.hero {
+    background: var(--lighter-primary-color);
+}
+
+.hero-left {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    padding: 10% 0%;
+}
+
+
+.hero-p {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.hero-left small {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.hero-buttons {
+    margin: 15px 0px;
+    display: flex;
+}
+
+.hero-button{
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hero-button1 {
+    background: var(--secondary-color);
+    margin-right: 30px;
+}
+
+.hero-button2 {
+    border: 1px white solid;
+}
+
+.image-deck {
+    position: relative;
+    height: 400px;
+}
+
+.image-deck img {
+    margin: 50px 0px;
+    position: absolute;
+    height: 275px;
+    width: 90%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#image-deck-img1 {
+    top: 10%;
+    left: 10%;
+    z-index: 1;
+}
+
+
+.card{
+    border-radius: 10px;
+}
+
+/* Skill Card */
+.skill-card {
+    margin: 20px 2%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.skill-card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    transform: translateY(30px);
+}
+
+.skill-card-img{
+    border-radius: 10px 10px 0px 0px;
+    height: 200px;
+}
+
+.skill-card-content{
+    text-align: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.skill-card-title{
+    font-weight: bold;
+}
+
+.skill-card-button{
+    background: var(--lighter-primary-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: var(--primary-color);
+}
+
+.footer-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-link-stacks {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-link-stack-title {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.footer-links {
+    list-style: none;
+}
+
+footer p,
+a {
+    color: white;
+}
+
+footer hr {
+    background: rgba(156, 156, 156, 0.733);
+}
